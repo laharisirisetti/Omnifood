@@ -47,6 +47,9 @@ SPACING SYSTEM (px)
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -60,6 +63,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* Only works if there is nothing absolutely postioned to body */
+  overflow-x: hidden;
 }
 
 /**************************/
@@ -188,6 +193,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
